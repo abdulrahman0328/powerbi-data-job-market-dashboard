@@ -70,7 +70,7 @@ This dashboard brings these indicators together in one interactive report, makin
 
 A video walkthrough of the Power BI report will be added here.
 
-**▶ [[Watch the Power BI Report Walkthrough — Loom](https://www.loom.com/share/46427a7841f543bbb387c59cefbbb307)](#)**
+**▶ [[Watch the Power BI Report Video — Loom](https://www.loom.com/share/46427a7841f543bbb387c59cefbbb307)](#)**
 
 ---
 
