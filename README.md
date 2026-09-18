@@ -1,4 +1,4 @@
-#  Project 01 — Data Job Market Dashboard
+# Power BI Project — Data Job Market Dashboard
 
 > 🚀 **New Skills Unlocked: Power BI**
 >
