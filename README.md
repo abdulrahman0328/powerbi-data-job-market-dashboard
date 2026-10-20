@@ -1,176 +1,78 @@
-# Power BI Project — Data Job Market Dashboard
+# Power BI: Data Jobs Market Analysis (Portfolio Hub)
 
-> 🚀 **New Skills Unlocked: Power BI**
->
-> This is my **first Power BI reporting project** and the beginning of a new skill in my data analytics journey.
->
-> This project is a starting point, not the final destination. Future projects will become more advanced, more polished, and more focused on delivering stronger business insights.
+[![Power BI](https://img.shields.io/badge/Power%20BI-Portfolio-F2C811?logo=powerbi&logoColor=111111)](#)
+[![DAX](https://img.shields.io/badge/DAX-Advanced%20Measures-6EA8FE)](#)
+[![Status](https://img.shields.io/badge/Project-Multiple%20Iterations-2D2D2D)](#)
 
----
+Welcome to my Data Job Market Analysis repository! This repository serves as a central hub for my Power BI projects exploring the global data market. 
 
-## 🎯 Who Are We Designing This For?
+The goal of this project is to uncover hiring trends, salary distributions, and in-demand skills, while practicing advanced Data Modeling, DAX, and UI/UX design. The analysis has evolved through multiple iterations:
 
-- **Job Seekers** — People looking for data-related opportunities.
-- **Career Switchers** — People transitioning into data roles.
-- **Job Explorers** — People comparing roles, salaries, and market opportunities.
+## 📂 Project Directory
 
----
+### 🟢 [Version 1: Initial Data Exploration & Foundation](https://github.com/abdulrahman0328/powerbi-data-job-market-dashboard)
+*Located in: `Data_jobs_V1/`*
+*   **Focus:** Establishing the data model, cleaning the raw dataset (479K+ postings), and creating a foundational dashboard.
+*   **Technical Highlights:** 
+    *   **Power Query:** Extensive ETL, handling nulls, and standardizing job titles.
+    *   **Data Modeling:** Built a Star Schema (Fact & Dimensions) for optimal performance.
+    *   **DAX:** Implemented `MEDIAN` calculations to avoid skewed averages from outliers.
+    *   **UI/UX:** Applied a basic Dark Mode JSON theme.
 
-## 💡 What Problem Are We Trying to Solve?
-
-People looking for data roles often face a fragmented job market where information about **salaries, job demand, platforms, locations, and job requirements** is spread across different sources.
-
-This dashboard brings these indicators together in one interactive report, making it easier to:
-
-- Explore the data job market
-- Compare different opportunities
-- Understand salary levels
-- Identify market trends
-- Explore job requirements and characteristics
-
----
-
-## ❓ Business Questions
-
-| Business Question | How the Dashboard Addresses It |
-|---|---|
-| How many data jobs are available? | **Job Count** KPI and job-title breakdown |
-| What are the typical salaries? | **Median Yearly Salary** and **Median Hourly Salary** |
-| How do salaries differ by job title? | Salary comparison and **Job Title Drill-Through** |
-| How does job demand change over time? | **Job Trending** chart |
-| Which platforms have the most job postings? | **Most Popular Platforms** chart |
-| How are jobs distributed globally? | **Jobs Globally** map |
-| How do employment types differ? | **Types of Jobs** visualization |
-| How common are remote opportunities? | **Work From Home (WFH)** breakdown |
-| How often is a degree mentioned? | **Degree Requirement** breakdown |
-| How can a specific job title be explored in more detail? | **Job Title Drill-Through** page |
+### 🔵 Version 2: Advanced Analytics & UI Refinement (Current)
+*Located in: `Data_jobs_V2/`*
+*   **Focus:** Upgrading the technical depth of the report and refining the user experience based on V1 feedback.
+*   **Technical Highlights:**
+    *   **Advanced DAX:** Moved beyond basic aggregations to implement **Dynamic Ranking** using `RANKX`. This allows visuals (like Top 5 Jobs) to update automatically based on user slicers (e.g., filtering by Country).
+   
+    *   **Data Storytelling Layout:** Reorganized the report pages logically (Market Pulse vs. Compensation) to guide the user's eye through a narrative rather than isolated charts.
+    *   **Advanced Visuals:** Added a scatter plot for Skills vs. Salary and structured the Top Platforms visual for better readability.
 
 ---
 
-## 🖼️ Project Preview
+## 📸 Dashboard Preview: Market Overview
 
-### 🏠 Home
-<img width="1423" height="798" alt="01 Home" src="https://github.com/user-attachments/assets/5070a70a-d3da-415f-8ed4-ce798cb22ae9" />
+Here is a quick look at the main interface. The dashboard provides a high-level overview of the market, allowing users to instantly grasp the scale of the data and key financial metrics.
 
+<img width="1216" height="701" alt="Data Jobs Market Dashboard Preview" src="https://github.com/user-attachments/assets/53a4608a-8621-4316-889f-d689943a5da1" />
 
+> **💡 What you're looking at:**
+> *   **Top KPIs:** A snapshot of 479K+ job postings, median yearly ($113K) and hourly ($48) salaries.
+> *   **Top Paying Jobs:** A ranking of data roles based on the selected salary metric.
+> *   **In-Demand Skills:** The most frequently requested tools (e.g., Python, SQL).
+> *   **Hiring Trends & Platforms:** A timeline of posting volume and the top platforms driving the market (e.g., LinkedIn).
+> *   **Interactive Slicers:** The filters at the top allow users to drill down by Job Title, Country, and Employment Type.
 
-### 📊 Main Dashboard
-<img width="1444" height="803" alt="02 Dashboard" src="https://github.com/user-attachments/assets/1b539f73-b035-4715-a9b1-b03945c64f03" />
+## 📖 The Story Behind the Dashboard
 
+The global data job market is noisy and constantly shifting. Job seekers and career changers often need to compare information spread across thousands of postings. I built this dashboard to cut through the noise and bring several market signals into one interactive view. 
 
+Instead of just presenting raw numbers, this report is designed to answer critical questions:
+*   *Which data roles actually pay the most?*
+*   *What skills are most frequently requested (Python, SQL, Cloud)?*
+*   *How does compensation vary by country and employment type?*
+*   *Which platforms are the most active for hiring?*
 
-### 🔎 Job Title Drill-Through
-<img width="1632" height="910" alt="03 job_title_drillthrough" src="https://github.com/user-attachments/assets/1594f70f-0ac3-4e0f-872f-8daf319ba1ce" />
+## 🎯 Who is this for? (The Audience)
 
+This report is designed for three main audiences:
+- **Job seekers** comparing roles, compensation, and frequently requested skills.
+- **Career transitioners** identifying skills and job titles worth investigating.
+- **Hiring and workforce researchers** exploring posting volume, geography, and recruitment platforms.
 
+## 🚀 The Data Journey (Behind the Scenes)
 
----
+A dashboard is only as good as the data behind it. Here is how the raw data was transformed into actionable insights:
 
-## 🎥 Report Walkthrough
+- **Data Cleaning (Power Query):** Real-world data is messy. I filtered out null salary values to ensure accurate financial calculations, standardized job titles (mapping various titles into a clean `job_title_short` column), and converted text columns (like 'Yes/No') into true Booleans for seamless DAX filtering.
+- **Data Modeling (Star Schema):** To keep the report fast and scalable, I avoided a flat table. The model utilizes a Fact Table (`job_postings_fact` containing salaries and IDs) connected to Dimension tables (`company_dim`, `skills_dim`, and a custom `date_dim` for time-intelligence).
 
-A video walkthrough of the Power BI report will be added here.
+## 🛠️ Core Tech Stack Used
 
-**▶ [[Watch the Power BI Report Video — Loom](https://www.loom.com/share/46427a7841f543bbb387c59cefbbb307)]**
+| Tool / Feature | Purpose |
+| --- | --- |
+| Power BI Desktop | Report design, data model, interactions, and visuals |
+| Power Query | Importing, cleaning, transforming, and shaping data |
+| DAX | KPI calculations, median salary measures, and dynamic ranking logic  |
+| Git / GitHub | Version control and project documentation |
 
----
-
-## 📌 Dashboard Features
-
-### Main Dashboard
-
-- **Job Count**
-- **Salary Rating**
-- **Median Yearly Salary**
-- **Median Hourly Salary**
-- **Monthly Job Trend**
-- **Yearly Salary vs. Hourly Salary**
-- **Job Title Comparison**
-- **Job Platform Distribution**
-- **Job Title Filtering**
-- **Date Filtering**
-
-### Job Title Drill-Through
-
-The drill-through page provides a more detailed view of the selected job title, including:
-
-- Average vs. Median Yearly Salary
-- Average vs. Median Hourly Salary
-- Work From Home distribution
-- Degree requirement information
-- Jobs by country
-- Popular job platforms
-- Employment type distribution
-
----
-
-## 🧠 What I Practiced
-
-This project helped me practice the fundamentals of building an interactive Power BI report:
-
-- Power BI dashboard design
-- Data visualization
-- KPI design
-- Slicers and filtering
-- Drill-through
-- DAX measures (Star Rating)
-- Salary calculations
-- Trend analysis
-- Visual hierarchy
-- Business-focused reporting
-
----
-
-## 🛠️ Tools
-
-| Tool | Purpose |
-|---|---|
-| **Power BI** | Data visualization and reporting |
-| **DAX** | Measures and calculations |
-| **Power Query** | Data preparation and transformation |
-| **Excel** | Data source and supporting analysis |
-
----
-
-## 📁 Project Structure
-
-```text
-Project-01-Data-Job-Market/
-│
-├── README.md
-├── assets/
-│   ├── 01_home.png
-│   ├── 02_Dashboard.png
-│   └── 03_job_title_drillthrough.png
-│
-├── report/
-│   └── Dashboard 1# 
-│
-└── documentation/
-    └── project-notes.md
-``` 
-
-## 🔗 Connect With Me
-
-**🌐 Portfolio:**  
-https://abdodatanerd.figma.site/
-
-**💼 LinkedIn:**  
-https://www.linkedin.com/in/abdulrahman-m-2003march
-
-**💻 GitHub:**  
-https://github.com/abdulrahman0328
-
----
-
-## 👤 Author
-
-**Abdulrahman Muhammad**
-
-Data Analyst | Excel | Power BI | SQL  
-Turning Financial Data into Business Insights
-
----
-
-> ⭐ **Project #1 — Power BI**
->
-> A first step in a skill that I plan to develop through increasingly advanced projects.
