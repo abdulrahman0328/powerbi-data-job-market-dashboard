@@ -12,6 +12,8 @@ The goal of this project is to uncover hiring trends, salary distributions, and 
 
 ### 🟢 [Version 1: Initial Data Exploration & Foundation](https://github.com/abdulrahman0328/powerbi-data-job-market-dashboard)
 *Located in: `Data_jobs_V1/`*
+<img width="1150" height="664" alt="Screenshot 2026-08-21 173624" src="https://github.com/user-attachments/assets/3f220857-fcf7-4b18-b68d-75df6ead0fe7" />
+
 *   **Focus:** Establishing the data model, cleaning the raw dataset (479K+ postings), and creating a foundational dashboard.
 *   **Technical Highlights:** 
     *   **Power Query:** Extensive ETL, handling nulls, and standardizing job titles.
@@ -21,27 +23,23 @@ The goal of this project is to uncover hiring trends, salary distributions, and 
 
 ### 🔵 Version 2: Advanced Analytics & UI Refinement (Current)
 *Located in: `Data_jobs_V2/`*
+## 📸 Dashboard Preview: Market Overview
+<img width="1217" height="697" alt="Screenshot 2026-10-20 155648" src="https://github.com/user-attachments/assets/56eaf99f-ff7b-4ea3-b8b0-69afd39a8364" />
+
 *   **Focus:** Upgrading the technical depth of the report and refining the user experience based on V1 feedback.
 *   **Technical Highlights:**
     *   **Advanced DAX:** Moved beyond basic aggregations to implement **Dynamic Ranking** using `RANKX`. This allows visuals (like Top 5 Jobs) to update automatically based on user slicers (e.g., filtering by Country).
    
     *   **Data Storytelling Layout:** Reorganized the report pages logically (Market Pulse vs. Compensation) to guide the user's eye through a narrative rather than isolated charts.
     *   **Advanced Visuals:** Added a scatter plot for Skills vs. Salary and structured the Top Platforms visual for better readability.
-
----
-
-## 📸 Dashboard Preview: Market Overview
-
 Here is a quick look at the main interface. The dashboard provides a high-level overview of the market, allowing users to instantly grasp the scale of the data and key financial metrics.
-
-<img width="1216" height="701" alt="Data Jobs Market Dashboard Preview" src="https://github.com/user-attachments/assets/53a4608a-8621-4316-889f-d689943a5da1" />
-
 > **💡 What you're looking at:**
 > *   **Top KPIs:** A snapshot of 479K+ job postings, median yearly ($113K) and hourly ($48) salaries.
 > *   **Top Paying Jobs:** A ranking of data roles based on the selected salary metric.
 > *   **In-Demand Skills:** The most frequently requested tools (e.g., Python, SQL).
 > *   **Hiring Trends & Platforms:** A timeline of posting volume and the top platforms driving the market (e.g., LinkedIn).
 > *   **Interactive Slicers:** The filters at the top allow users to drill down by Job Title, Country, and Employment Type.
+---
 
 ## 📖 The Story Behind the Dashboard
 
