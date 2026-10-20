@@ -8,7 +8,7 @@
 
 Here is a quick look at the main interface. The dashboard provides a high-level overview of the market, allowing users to instantly grasp the scale of the data and key financial metrics.
 
-<img width="1216" height="701" alt="Data Jobs Market Dashboard Preview" src="https://github.com/user-attachments/assets/53a4608a-8621-4316-889f-d689943a5da1" />
+<img width="1217" height="697" alt="v2" src="https://github.com/user-attachments/assets/4d2ce430-0f7b-4388-9d9f-5626b015a6d4" />
 
 > **💡 What you're looking at:**
 > *   **Top KPIs:** A snapshot of 479K+ job postings, median yearly ($113K) and hourly ($48) salaries.
